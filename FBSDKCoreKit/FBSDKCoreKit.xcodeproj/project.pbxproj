@@ -691,6 +691,20 @@
 			remoteGlobalIDString = 819573F11C2B8ECB00BFCA39;
 			remoteInfo = "Bolts-watchOS-Dynamic";
 		};
+		5283ED9C2119C8F300AA9092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D99470F1A9531B5003375EC /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0B950F11B0080BE00942C38;
+			remoteInfo = "OCMock iOS";
+		};
+		5283ED9E2119C8F300AA9092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D99470F1A9531B5003375EC /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 817EB1621BD765130047E85A;
+			remoteInfo = "OCMock tvOS";
+		};
 		7E55574B1A8E89A800344F86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7E55573F1A8E89A800344F86 /* OHHTTPStubs.xcodeproj */;
@@ -1761,6 +1775,8 @@
 				9D9947251A9531B5003375EC /* OCMockTests.xctest */,
 				9D9947271A9531B5003375EC /* libOCMock.a */,
 				9D9947291A9531B5003375EC /* OCMockLibTests.xctest */,
+				5283ED9D2119C8F300AA9092 /* OCMock.framework */,
+				5283ED9F2119C8F300AA9092 /* OCMock.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2333,6 +2349,20 @@
 			remoteRef = 2A8FB1861C921D9F00027121 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		5283ED9D2119C8F300AA9092 /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 5283ED9C2119C8F300AA9092 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5283ED9F2119C8F300AA9092 /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 5283ED9E2119C8F300AA9092 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		7E55574C1A8E89A800344F86 /* libOHHTTPStubs.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -2538,7 +2568,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -rf ../Bolts-IOS/build/ ../build/Bolts.framework\n../Bolts-IOS/scripts/build_framework.sh -c Release\ncp -R ../Bolts-IOS/build/ios/Bolts.framework ../build/\n";
+			shellScript = "rm -rf ../Bolts-IOS/build/ ../build/Bolts.framework\n../Bolts-IOS/scripts/build_framework.sh -c Release\ncp -R ../Bolts-IOS/build/Release-iphonesimulator/Bolts.framework ../build/\n";
 		};
 		9D6DEEFD1BC2E546001A94ED /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
